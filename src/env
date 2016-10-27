@@ -1,0 +1,6 @@
+DB_NAME = DWA
+DB_USERS = root
+DB_PASS = root
+DB_HOST = localhost
+DB_SCHEMA = mysql
+DB_PORT = 3000
