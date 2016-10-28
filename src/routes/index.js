@@ -1,14 +1,14 @@
-mondule.exports = (express) => {
+module.exports = (express) => {
 	const router = express.Router();
 	
 	router.get('/genre',  (req, res) =>{
 		res.json({
-			
+			horror: true,
 		})
-	})
+	});	
 	
-	router.user('/api/', require('./genre')(express));
-	router.user('/api/', require('./books')(express));
+	router.use('/api/', require('./api/genre')(express));
+	
 	
 	return router;
 }
